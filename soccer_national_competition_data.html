@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="fixed_midashi.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://unpkg.com/multiple-select@1.5.2/dist/multiple-select.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/multiple-select@1.5.2/dist/multiple-select.min.css">
+
+  <title>サッカー国際大会データ</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    #filter-container {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    #filter-container label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    #filter-container input,
+    #filter-container select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body onLoad="FixedMidashi.create();">
+  <h1>サッカー国際大会データ</h1>
+  <div id="filter-container"></div>
+  <table id="data-table" _fixedhead="rows:1; cols:2">
+    <thead>
+      <tr>
+        <th>年</th>
+        <th>大会</th>
+        <th>開催国</th>
+        <th>結果</th>
+        <th>国</th>
+        <th>地域</th>
+        <th>参加チーム数</th>
+        <th>Wikipedia</th>
+        <th>flashscore</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <script src="soccer_national_competition_data.js"></script>
+</body>
+</html>
