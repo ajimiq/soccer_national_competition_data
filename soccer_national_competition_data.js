@@ -681,7 +681,7 @@ function filterData() {
     return (
       (year === '' || row['year'] === parseInt(year)) &&
       (competition === '' || row['competition'].toLowerCase().includes(competition)) &&
-      (hostCountry === '' || row['host_country'].toLowerCase().includes(hostCountry)) &&
+      (hostCountry === '' || row['hostCountry'].toLowerCase().includes(hostCountry)) &&
       (region === '' || row['region'] === region) &&
       (result === '' || row['result'] == result) &&
       (country === '' || row['country'].toLowerCase().includes(country))
