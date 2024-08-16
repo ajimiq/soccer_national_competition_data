@@ -746,15 +746,15 @@ function displayData(data) {
 
     for (const key in row) {
       if (key === 'result' && row[key] === '優勝') {
-        rowElement.style.backgroundColor = "gold";
+        rowElement.className = "td-1st";
       } else if (key === 'result' && row[key] === '準優勝') {
-        rowElement.style.backgroundColor = "yellow";
+        rowElement.className = "td-2nd";
       } else if (key === 'result' && (row[key] === '3位' || row[key] === '4位' || row[key] === 'ベスト4')) {
-        rowElement.style.backgroundColor = "#FFFF80";
+        rowElement.className = "td-best4";
       } else if (key === 'result' && row[key] === 'ベスト8') {
-        rowElement.style.backgroundColor = "#FFFFAA";
+        rowElement.className = "td-best8";
       } else if (key === 'result' && row[key] === 'ベスト16') {
-        rowElement.style.backgroundColor = "#FFFFEA";
+        rowElement.className = "td-best16";
       }
       const cellElement = rowElement.insertCell();
       if (key === 'wikiUrl' || key === 'flashscoreUrl') {

@@ -12,15 +12,27 @@
 
   <title>サッカー国際大会データ</title>
   <style>
+    body {
+      font-family: 'Meiryo UI';
+    }
     table {
       border-collapse: collapse;
       width: 100%;
     }
 
-    th, td {
+    th {
+      padding: 8px;
+      text-align: center;
+      background-color: #EEEEEE;
+      border: 1px solid #DDDDDD;
+      font-family: 'Meiryo UI';
+    }
+
+    td {
       padding: 8px;
       text-align: left;
-      border: 1px solid #ddd;
+      border: 1px solid #DDDDDD;
+      font-family: 'Meiryo UI';
     }
 
     #filter-container {
@@ -38,7 +50,23 @@
       width: 100%;
       padding: 8px;
       margin-bottom: 10px;
-      border: 1px solid #ddd;
+      border: 1px solid #DDDDDD;
+    }
+
+    .td-1st {
+      background-color: gold;
+    }
+    .td-2nd {
+      background-color: yellow;
+    }
+    .td-best4 {
+      background-color: #FFFF80;
+    }
+    .td-best8 {
+      background-color: #FFFFAA;
+    }
+    .td-best16 {
+      background-color: #FFFFCA;
     }
   </style>
 </head>
